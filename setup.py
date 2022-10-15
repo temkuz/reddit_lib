@@ -7,5 +7,5 @@ setup(
     author='temkuz',
     author_email='temkuz@bk.ru',
     description='Python library for parsing reddit without using api',
-    install_requires=open('requirements.txt', 'r', encoding='utf-8').readlines()
+    install_requires=['requests']
 )
