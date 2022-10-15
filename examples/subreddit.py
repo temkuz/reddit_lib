@@ -1,4 +1,4 @@
-from reddit_parser import SubredditParser
+from reddit_lib import SubredditParser
 
 subreddit_name = '/r/python'
 

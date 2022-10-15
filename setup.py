@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='reddit_lib',
     version='0.1.0',
-    packages=['reddit_parser', 'reddit_parser.classes', 'reddit_parser.parsers'],
+    packages=['reddit_lib', 'reddit_lib.classes', 'reddit_lib.parsers'],
     author='temkuz',
     author_email='temkuz@bk.ru',
     description='Python library for parsing reddit without using api',
