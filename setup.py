@@ -7,5 +7,5 @@ setup(
     author='temkuz',
     author_email='temkuz@bk.ru',
     description='Python library for parsing reddit without using api',
-    requires=['requests>=2.28.1']
+    requires=['requests']
 )
