@@ -1,7 +1,7 @@
 from typing import Iterable
 
 from ..config import BASE_URL, SESSION
-from ..classes.post import ChildrenListing, Post, PostListing
+from ..classes.post import Post, PostListing
 from .base import BaseParser
 
 
@@ -14,9 +14,8 @@ class SubredditParser(BaseParser):
     def get(self) -> Iterable[Post]:
         params = {'limit': 100}
         while True:
-            response = SESSION.get(self.url, params=params)
-            response.raise_for_status()
-            data = PostListing(**response.json())['data']
+            response_json = self._make_request(self.url, params)
+            data = PostListing(**response_json)['data']
 
             for child in data['children']:
                 yield child['data']
