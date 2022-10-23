@@ -1,5 +1,7 @@
 from typing import TypedDict
 
+from .base import Thing, ThingData
+
 
 class Comment(TypedDict):
     all_awardings: list
@@ -74,20 +76,13 @@ class Comment(TypedDict):
     user_reports: list
 
 
-class ChildrenListing(TypedDict):
+class ChildrenListing(Thing):
     data: Comment
-    kind: str
 
 
-class CommentListingData(TypedDict):
-    after: str
-    before: str
+class CommentListingData(ThingData):
     children: list[ChildrenListing]
-    dist: int
-    geo_filter: str
-    modhash: str
 
 
-class CommentListing(TypedDict):
+class CommentListing(Thing):
     data: CommentListingData
-    kind: str
