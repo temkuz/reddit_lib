@@ -1,4 +1,4 @@
-from reddit_lib.parsers import CommentParser
+from reddit_lib import CommentParser
 
 permalink = '/r/Python/comments/y9u87s/can_we_stop_creating_docker_images_that_require/'
 

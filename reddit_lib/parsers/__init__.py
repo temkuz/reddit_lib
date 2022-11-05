@@ -1,2 +1,2 @@
-from .subreddit import SubredditParser
 from .comment import CommentParser
+from .subreddit import SubredditParser

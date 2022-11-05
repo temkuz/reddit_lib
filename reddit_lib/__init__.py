@@ -1,1 +1,1 @@
-from .parsers import SubredditParser
+from .parsers import SubredditParser, CommentParser
