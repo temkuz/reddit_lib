@@ -14,7 +14,7 @@ Development plans:
 - Make a normal wiki
   - [ ] Subreddit describe
   - [ ] Comments describe
-  - [ ] Comments describe
+  - [ ] Users describe
 
 # Documentation
 
