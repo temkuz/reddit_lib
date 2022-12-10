@@ -1,3 +1,4 @@
+from __future__ import annotations
 from typing import TypedDict
 
 from .base import Thing, ThingData
@@ -57,7 +58,7 @@ class Comment(TypedDict):
     parent_id: str
     permalink: str
     removal_reason: None
-    replies: str | dict
+    replies: CommentListing
     report_reasons: None
     saved: bool
     score: int
