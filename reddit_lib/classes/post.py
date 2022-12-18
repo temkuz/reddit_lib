@@ -122,12 +122,12 @@ class Post(TypedDict):
     wls: int
 
 
-class ChildrenListing(Thing):
+class PostChildrenListing(Thing):
     data: Post
 
 
 class PostListingData(ThingData):
-    children: list[ChildrenListing]
+    children: list[PostChildrenListing]
 
 
 class PostListing(Thing):

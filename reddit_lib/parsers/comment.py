@@ -1,7 +1,7 @@
 from typing import Iterable
 
 from .base import BaseParser
-from ..config import BASE_URL, SESSION
+from ..config import BASE_URL
 
 from ..classes.comment import Comment, CommentListing
 from ..classes.post import Post, PostListing

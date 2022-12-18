@@ -1,6 +1,6 @@
 from typing import Iterable
 
-from ..config import BASE_URL, SESSION
+from ..config import BASE_URL
 from ..classes.post import Post, PostListing
 from .base import BaseParser
 

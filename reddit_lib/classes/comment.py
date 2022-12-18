@@ -77,12 +77,12 @@ class Comment(TypedDict):
     user_reports: list
 
 
-class ChildrenListing(Thing):
+class CommentChildrenListing(Thing):
     data: Comment
 
 
 class CommentListingData(ThingData):
-    children: list[ChildrenListing]
+    children: list[CommentChildrenListing]
 
 
 class CommentListing(Thing):
